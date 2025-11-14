@@ -3,9 +3,9 @@
  * @param message The notification message to send
  * @param title Optional title (defaults to 'Jenkins')
  * @param priority Optional priority (-2 to 2, defaults to 0)
- * @param sound Optional sound (defaults to 'R2D2')
+ * @param sound Optional sound (defaults to 'pushover')
  */
-def call(String message, String title = 'Jenkins', int priority = 0, String sound = 'R2D2') {
+def call(String message, String title = 'Jenkins', int priority = 0, String sound = 'pushover') {
   withCredentials([
     string(credentialsId: 'pushover-user-token', variable: 'PUSHOVER_USER'),
     string(credentialsId: 'pushover-jenkins-token', variable: 'PUSHOVER_APP')
