@@ -1,4 +1,4 @@
-# jenkins-pushover
+# Jenkins Pushover Library
 
 A Jenkins shared library for sending [Pushover](https://pushover.net/) notifications from your pipeline builds.
 
@@ -181,7 +181,3 @@ post {
 ## License
 
 MIT
-
-## Contributing
-
-Contributions welcome! Please open an issue or submit a pull request.
