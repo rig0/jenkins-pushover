@@ -8,7 +8,7 @@
 def call(String message, String title = 'Jenkins', int priority = 0, String sound = 'pushover') {
   withCredentials([
     string(credentialsId: 'pushover-user-token', variable: 'PUSHOVER_USER'),
-    string(credentialsId: 'pushover-jenkins-token', variable: 'PUSHOVER_APP')
+    string(credentialsId: 'pushover-app-token', variable: 'PUSHOVER_APP')
   ]) {
     try {
       echo "📱 Sending Pushover notification..."
