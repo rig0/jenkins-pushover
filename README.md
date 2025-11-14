@@ -21,7 +21,7 @@ A Jenkins shared library for sending [Pushover](https://pushover.net/) notificat
 1. In Jenkins, go to **Manage Jenkins** → **Configure System**
 2. Scroll to **Global Pipeline Libraries**
 3. Add a new library with:
-   - **Name**: `Pushover`
+   - **Name**: `jenkins-pushover`
    - **Default version**: `main`
    - **Retrieval method**: Modern SCM
    - **Source Code Management**: Git
@@ -47,7 +47,7 @@ Create two Jenkins credentials (Manage Jenkins → Credentials):
 ### Basic Usage
 
 ```groovy
-@Library('Pushover') _
+@Library('jenkins-pushover') _
 
 pipeline {
   agent any
@@ -73,7 +73,7 @@ pipeline {
 ### Advanced Usage
 
 ```groovy
-@Library('Pushover') _
+@Library('jenkins-pushover') _
 
 pipeline {
   agent any
